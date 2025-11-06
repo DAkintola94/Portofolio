@@ -1,0 +1,47 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #4a87c0ff;
+  font-family: Papyrus, fantasy;
+  font-size: 25px;
+  height: 7vh;
+  row-gap: 3px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.navbar,
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+.stickFoot {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  bottom: 40px;
+  z-index: 1100;
+  font-size: 20px;
+  color: red;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+#image_backHome {
+  height: 40px;
+}
+
+#image_backHome:hover {
+  transform: scale(1.2);
+}
