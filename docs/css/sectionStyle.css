@@ -34,3 +34,50 @@ section {
   text-align: center;
   color: white;
 }
+
+#sTwo {
+  height: 70vh;
+  width: 100vw;
+  caret-color: transparent;
+}
+
+.contactDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  background-image: url("/image/landscape.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.SoME_logo img {
+  height: 30px;
+}
+
+.SoME_logo {
+  display: flex;
+  gap: 20px;
+}
+
+.contact_image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+}
+
+.experience_image {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+}
+
+.experience_image img {
+  height: 100px;
+}
