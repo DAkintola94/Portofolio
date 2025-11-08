@@ -48,6 +48,7 @@ section {
   justify-content: center;
   height: 50%;
   background-image: url("/image/landscape.jpg");
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
@@ -76,6 +77,23 @@ section {
   align-items: center;
   justify-content: center;
   gap: 200px;
+}
+
+@media screen and (max-width: 700px) {
+  .contact_image {
+    height: 80%;
+  }
+  .experience_image {
+    direction: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+  }
+  .experience_image img {
+    height: 10px;
+    width: 100px;
+  }
 }
 
 .experience_image img {
