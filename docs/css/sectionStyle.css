@@ -105,5 +105,7 @@ section {
   grid-auto-flow: column;
   align-items: center;
   justify-content: center;
+  background-color: black;
+  color: white;
   gap: 20px;
 }
