@@ -3,13 +3,6 @@ section {
   width: 100vw;
 }
 
-.placeholder {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("/docs/image/orca_background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .sectionOne {
   position: relative;
   display: flex;
@@ -42,7 +35,7 @@ section {
 }
 
 .sectionTwo {
-  background-image: url("/image/landscape.jpg");
+  background-image: url("/docs/image/landscape.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
