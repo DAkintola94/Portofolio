@@ -99,3 +99,11 @@ section {
 .experience_image img {
   height: 100px;
 }
+
+.sectionThree {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
