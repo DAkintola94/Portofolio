@@ -1,27 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll("section");
-    const navBar = document.querySelector(".navbar");
-    const barTwo = document.querySelector(".barTwo");
-    const barThree = document.querySelector(".barThree");
-    const barFour = document.querySelector(".barFour");
-    const barFive = document.querySelector(".barFive");
+    const navLinks = document.querySelectorAll(".nav-item");
     const stickyImage = document.getElementById("a_backHome");
 
-    const sectionColors = {
-        sOne: "red",
-        sTwo: "red",
-        sThree: "red"
-    };
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry =>  {
             if(entry.isIntersecting){
-                console.log("you are currently at", entry.target.id)
+                //console.log("you are currently at", entry.target.id)
+
+                navLinks.forEach(link => link.classList.remove("active"));
                 const idValue = entry.target.id;
-                console.log(idValue);
-                if(sectionColors[idValue]){
-                    //navBar.style.backgroundColor = sectionColors[idValue]; 
-                   if(barTwo) barTwo.style.color = sectionColors[idValue];
-                }
+                const activeLink = document.querySelector(`.nav-item[href="#${idValue}"]`);
+                
+
+                if(activeLink)
+                    activeLink.classList.add("active");
+
                 if(entry.target.id === "sOne"){
                     console.log("Hei der");
                     stickyImage.hidden = true;
@@ -30,11 +24,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     stickyImage.hidden = false;
                 }
             }
-        })
-    })
+            
+        });
+        
+    },
+    {threshold: 0.5}
+)
 
     sections.forEach(section => {
         observer.observe(section);
     });
 
-})
+});
