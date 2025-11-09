@@ -41,16 +41,19 @@ section {
   caret-color: transparent;
 }
 
+.sectionTwo {
+  background-image: url("/image/landscape.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .contactDetail {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 50%;
-  background-image: url("/image/landscape.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   color: white;
 }
 
