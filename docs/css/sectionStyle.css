@@ -82,16 +82,17 @@ section {
 @media screen and (max-width: 700px) {
   .contact_image {
     height: 80%;
+    justify-content: normal;
   }
   .experience_image {
     direction: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 0px;
+    gap: 10px;
   }
   .experience_image img {
-    height: 10px;
+    height: 5px;
     width: 100px;
   }
 }
