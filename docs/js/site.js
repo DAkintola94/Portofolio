@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry =>  {
             if(entry.isIntersecting){
-                //console.log("you are currently at", entry.target.id)
+                console.log("you are currently at", entry.target.id)
 
                 navLinks.forEach(link => link.classList.remove("active"));
                 const idValue = entry.target.id;

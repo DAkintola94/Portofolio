@@ -35,7 +35,7 @@ section {
 }
 
 .sectionTwo {
-  background-image: url("/docs/image/landscape.jpg");
+  background-image: url("../image/landscape.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -97,12 +97,57 @@ section {
   height: 100px;
 }
 
+#sThree {
+  height: 200vh;
+}
+
 .sectionThree {
-  display: grid;
-  grid-auto-flow: column;
-  align-items: center;
-  justify-content: center;
   background-color: black;
   color: white;
   gap: 20px;
+}
+
+.experience_div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: purple;
+  width: 100%;
+  align-items: flex-end;
+}
+
+.education_div {
+  color: blue;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.exp_and_education {
+  display: flex;
+  color: purple;
+  height: 90%;
+  width: 100%;
+}
+
+.exp-education-detailed {
+  display: flex;
+  height: 10%;
+}
+
+.experience_detail {
+  color: orange;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-end;
+}
+
+.education_detail {
+  color: yellow;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
 }
