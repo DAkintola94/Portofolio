@@ -3,6 +3,10 @@ section {
   width: 100vw;
 }
 
+#sThree {
+  height: 150vh;
+}
+
 .sectionOne {
   position: relative;
   display: flex;
@@ -95,10 +99,6 @@ section {
 
 .experience_image img {
   height: 100px;
-}
-
-#sThree {
-  height: 200vh;
 }
 
 .sectionThree {
