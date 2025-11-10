@@ -63,6 +63,16 @@ section {
   color: white;
 }
 
+#career_highlight {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #ff4d4f;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
+  color: #e9a526;
+}
+
 .SoME_logo img {
   height: 30px;
 }
