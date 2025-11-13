@@ -54,6 +54,16 @@ section {
   background-repeat: no-repeat;
 }
 
+.sectionThree {
+  background-color: #151414ff;
+  color: white;
+  gap: 20px;
+}
+
+.sectionFour {
+  background-color: #151414ff;
+}
+
 .contactDetail {
   display: flex;
   flex-direction: column;
@@ -80,175 +90,4 @@ section {
 .SoME_logo {
   display: flex;
   gap: 20px;
-}
-
-.contact_image {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 37.5%;
-}
-
-.experience_image {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 200px;
-}
-
-@media screen and (max-width: 768px) {
-  .contact_image {
-    height: 80%;
-    justify-content: normal;
-  }
-  .experience_image {
-    direction: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-  }
-  .experience_image img {
-    height: 5px;
-    width: 100px;
-  }
-  #career_highlight {
-    padding-top: 15px;
-  }
-}
-
-.experience_image img {
-  height: 100px;
-}
-
-.sectionThree {
-  background-color: #151414ff;
-  color: white;
-  gap: 20px;
-}
-
-.experience_div {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  color: purple;
-  width: 100%;
-  align-items: flex-end;
-}
-
-.education_div {
-  color: blue;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 100%;
-}
-
-.exp_and_education {
-  display: flex;
-  color: purple;
-  width: 100%;
-  min-height: 100vh;
-  padding-left: 5px;
-}
-
-.exp-education-detailed {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem 0;
-  gap: 1rem;
-}
-
-.experience_detail {
-  color: orange;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: flex-start;
-  justify-content: center;
-  padding-left: 5px;
-}
-
-.education_detail {
-  color: yellow;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-.experience_detail,
-.education_detail {
-  flex: 1;
-  width: auto;
-}
-
-.rounded_element {
-  font-family: inherit;
-  font-size: 16px;
-  border-radius: 16px;
-  background-color: #dd5a4eff;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  color: white;
-  transition: all 0.2s;
-  padding: 0.7em 1em;
-  padding-left: 0.9em;
-  font: bold;
-}
-
-.text_below_circle {
-  font-family: Raleway;
-  color: white;
-}
-
-.title_element {
-  font-size: 3.5rem;
-  font-weight: 300;
-  line-height: 1.2;
-  color: #ededed;
-  margin-bottom: 1.5rem;
-  letter-spacing: -1px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-}
-
-#undertitle {
-  font-size: 1.125rem;
-  line-height: 1.8;
-  color: #d0c2c2ff;
-  max-width: 900px;
-  margin: 0 auto;
-  text-wrap: balance;
-  text-align: center;
-}
-
-.subtitle {
-  display: flex;
-  flex-direction: column;
-  font-size: 0.875rem;
-  font-weight: 400;
-  color: #ff4d4f;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 1.5rem;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-}
-
-.under_line {
-  width: 112px;
-  height: 47px;
-  border-bottom: 1px solid red;
-  position: absolute;
 }
