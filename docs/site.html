@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/sectionStyle.css"> 
+    <link rel="stylesheet" href="css/project.css" >
     <script src="js/site.js"></script>
+    <script src="js/wordMix.js"></script>
     <link rel="icon" href="image/augmented_reality_computer.svg" type="image/svg+xml">
     <title>DAkintola94</title>
 </head>
-<body>
-    <div class="navbar"> 
+<body style="background-color: #151414ff;">
+    <div class="navbar" id="navbarId"> 
         <div class="barTwo"> <a class="nav-item active" href="#sOne"> About </a> </div>
         <div class="barFive"> <a class="nav-item" href="#sTwo"> Contact </a></div>
         <div class="barFour"> <a class="nav-item" href="#sThree"> Experience </a> </div>
@@ -24,8 +26,25 @@
         </video>
         <div class="aboutDetail">
             <img alt="Avatar_pic" src="image/picture_profile.png" />
-            <h1 id="h1Line"> Dennis Akintola </h1>
-            <h3 id="h2Line"> A deeply curious and engaged student with a strong admiration for people and technology</h3>
+            <div class="wordMix" id="h2Line">
+                <h1> Enthusiastic</h1>
+            </div>
+
+            <div class="wordMix" id="h2Line">
+                <h1> Creative </h1>
+            </div>
+
+            <div class="wordMix" id="h2Line">
+                <h1> Analytical </h1>
+            </div>
+
+            <div class="wordMix" id="h2Line">
+                <h1> Collaborative </h1>
+            </div>
+                
+            <h3 id="h2Line">I’m Dennis Akintola, an IT student at the University of Agder. Throughout my studies,
+                 I’ve developed a diverse skill set that includes technical expertise, 
+                problem-solving abilities, and strong interpersonal skills gained through teamwork and real-world projects.</h3>
             <img id="semi_logo" alt="" src="image/debug.png" />
         </div>
         
@@ -56,59 +75,73 @@
     </section>
 
     <section class="sectionThree" id="sThree"> 
-        <div class="subtitle"> Resume
-        <div class="under_line"> </div>    
+        <div class="subtitle"> Projects
+        <div class="under_line"></div>    
         </div>
         <div class="title_element"> 
-            Experience
-            <p id="undertitle"> An overview of my professional experience and journey, reflecting the knowledge and skills gained throughout various experience which helped me foster differentt set of skills.
+            Featured Projects
+            <p id="undertitle"> 
+                An overview of projects developed throughout my IT education journey, 
+                showcasing the knowledge and skills I’ve gained through the use of various programming languages and frameworks.  
             </p>
-        </div>
-            <div class="experience_div">
-                <div class="exp_card">
+        </div> 
+         </div>
+            <div class="project_div">
+                <div class="proj_card">
                     <h2> Hei</h2>
                 </div>
-                <div class="exp_card">
+                <div class="proj_card">
                     <h2> Experience</h2>
                 </div>
-                <div class="exp_card">
+                <div class="proj_card">
                     <h2> Experience</h2>
                 </div>
-                <div class="exp_card">
-                    <h2> Experience</h2>
-                </div>
-                <div class="exp_card">
-                    <h2> Experience</h2>
-                </div>
-                <div class="exp_card">
-                    <h2> Experience</h2>
-                </div>  
-                <div class="exp_card">
-                    <h2> Experience</h2>
-                </div>
-                <div class="exp_card">
+                <div class="proj_card">
                     <h2> Experience</h2>
                 </div>
             </div>
         </div>
-
     </section>
 
     <section class="sectionFour" id="sFour">
-                <div class="education_title_element"> 
-                    Education
-            <p id="undertitle"> A summary of my academic background and the key knowledge, skills, and qualifications I developed throughout my studies. </p>
+        <div class="subtitle"> Technical skills
+        <div class="under_line"></div>    
         </div>
-            <div class="education_detail">
-            <div class="rounded_element"> Education </div>
-            <div class="text_below_circle"> <h1> Academic Background</h1> </div>
-            </div>
+    <div class="skills_div"> 
+        
+            <img alt= "" src="image/docker_original_wordmark_logo_icon_146557.svg" >
+            <img alt= "" src="image/git-svgrepo-com.svg" >
+            <img alt= "" src="image/net_internet_icon_189196.svg" >
+            <img alt= "" src="image/FastAPI.svg" >
+            <img alt= "" src="image/java_original_wordmark_logo_icon_146459.svg" >
+            <img alt= "" src="image/javascript_icon_130900.svg" >
+            <img alt= "" src="image/css_original_wordmark_logo_icon_146576.svg" >
+            <img alt= "" src="image/csharp_original_logo_icon_146578.svg" >
+            <img alt= "" src="image/python_vertical_logo_icon_168039.svg" >
+            <img alt= "" src="image/react_original_wordmark_logo_icon_146375.svg" >
+            <img alt= "" src="image/tailwind-svgrepo-com.svg" >
+            <img alt= "" src="image/sql-database-generic-svgrepo-com.svg" >
+    </div>
+     <div class="footer_section">
+        © 2026 Dennis Akintola. All rights reserved. Built with HTML, CSS and Javascript.
+     </div>
      </section>
-    <section class="sectionFive" id="sFive"> </section>
 
     <div class="stickFoot">
     <a title="Hjem" onmouseover="this.title=''" href="#sOne" id="a_backHome">
         <img alt="" id="image_backHome"  src="image/homeArrow_top.svg"> 
+    </a>
+    </div>
+
+    <div class="contactStick">
+    <a title="Github" onmouseover="this.title=''" href="https://github.com/DAkintola94" id="git">
+        <img alt="" id="git_image"  src="image/github_logo.svg"> 
+    </a>
+    <a title="Linkedin" onmouseover="this.title=''" href="https://www.linkedin.com/in/dennis-oni-akintola/" id="linked">
+        <img alt="" id="linked_image"  src="image/linkedin_logo.svg"> 
+    </a>
+    <a title="Hjem" onmouseover="this.title=''" href="#sOne" id="a_backHome">
+        <img alt="" id="image_bac"  src="image/homeArrow_top.svg"> 
     </a>
     </div>
     

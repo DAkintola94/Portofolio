@@ -1,0 +1,106 @@
+.backgroundPicture {
+  background-image: url("../image/landscape.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+.project_div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: purple;
+  width: 100%;
+  gap: 10px;
+  padding-bottom: 10px;
+  padding-left: 0.75rem;
+}
+
+.proj_card {
+  --grad: red, blue;
+  padding: 2.5rem;
+  background-image: linear-gradient(to bottom left, #282b2cff, #333536ff);
+  border-radius: 2rem;
+  gap: 1.5rem;
+  display: grid;
+  grid-template: "title icon" "content content" "bar bar" / 1fr auto;
+  font-family: system-ui, sans-serif;
+  color: #ffffffff;
+  box-shadow: inset -2px 2px hsl(0 0 100% / 1),
+    -20px 20px 40px hsl(0 0 0 / 0.25);
+  min-height: 30rem;
+  max-width: 30rem;
+}
+
+@media screen and (max-width: 768px) {
+  .project_div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+.card {
+  --grad: red, blue;
+  padding: 2.5rem;
+  background-image: linear-gradient(to bottom left, #282b2cff, #333536ff);
+  border-radius: 2rem;
+  gap: 1.5rem;
+  display: grid;
+  grid-template: "title icon" "content content" "bar bar" / 1fr auto;
+  font-family: system-ui, sans-serif;
+  color: #ffffffff;
+  box-shadow: inset -2px 2px hsl(0 0 100% / 1),
+    -20px 20px 40px hsl(0 0 0 / 0.25);
+  min-height: 12.5rem;
+}
+
+.exp-education-detailed {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  gap: 1rem;
+}
+
+.experience_detail {
+  color: orange;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 5px;
+}
+
+.education_detail {
+  color: yellow;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.experience_detail,
+.education_detail {
+  flex: 1;
+  width: auto;
+}
+
+.rounded_element {
+  font-family: inherit;
+  font-size: 16px;
+  border-radius: 16px;
+  background-color: #dd5a4eff;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: white;
+  transition: all 0.2s;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  font: bold;
+}
