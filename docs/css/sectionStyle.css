@@ -73,6 +73,12 @@ section {
   color: white;
 }
 
+@media screen and (max-width: 768px) {
+  .contactDetail {
+    display: none;
+  }
+}
+
 #career_highlight {
   font-size: 0.875rem;
   font-weight: 400;

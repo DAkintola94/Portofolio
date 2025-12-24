@@ -2,6 +2,95 @@ html {
   scroll-behavior: smooth;
 }
 
+/*
+.mobile_navbar {
+  display: none;
+}
+
+*/
+
+@media screen and (max-width: 768px) {
+  .off-screen-menu {
+    background-color: rgba(34, 37, 49);
+    color: white;
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: 0.3s ease;
+    z-index: 2000; /* z-index literally controls depth, what's comes in front and what's behind.*/
+  }
+  .off-screen-menu.initiate {
+    right: 0;
+  }
+
+  .off-screen-menu ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .off-screen-menu a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .off-screen-menu a:hover {
+    color: red;
+  }
+
+  nav {
+    padding: 1rem;
+    display: flex;
+    background-color: rgba(20, 21, 28, 1);
+    z-index: 2000;
+  }
+
+  .mobile_navbar {
+    z-index: 2100;
+    height: 40px;
+    width: 40px;
+    margin-left: auto;
+    position: relative;
+  }
+
+  .mobile_navbar span {
+    height: 5px;
+    width: 100%;
+    background-color: #6f86ff;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3 ease;
+  }
+  .mobile_navbar span:nth-child(1) {
+    top: 25%;
+  }
+  .mobile_navbar span:nth-child(3) {
+    top: 75%;
+  }
+  .mobile_navbar.initiate span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  .mobile_navbar.initiate span:nth-child(2) {
+    opacity: 0;
+  }
+  .mobile_navbar.initiate span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
@@ -33,7 +122,8 @@ html {
 
 @media screen and (max-width: 768px) {
   .navbar {
-    font-size: large;
+    /* font-size: large; */
+    display: none;
   }
 }
 
