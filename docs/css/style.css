@@ -7,7 +7,8 @@ html {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  background-color: #4a87c0ff;
+  background-color: rgba(74, 135, 192, 0.6);
+  backdrop-filter: blur(10px);
   font-family: Papyrus, fantasy;
   font-size: 20px;
   height: 5vh;
@@ -19,10 +20,15 @@ html {
   right: 0;
   z-index: 1000;
   caret-color: transparent;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .navbar.hidden {
-  display: none;
+  opacity: 0;
+  transform: translateY(-100%);
+  pointer-events: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -57,32 +63,19 @@ html {
   justify-content: center;
 }
 
-.contactStick {
-  display: flex;
-  flex-direction: column;
-  position: sticky;
-  bottom: 250px;
-  right: 40px;
-  z-index: 1100;
-  font-size: 20px;
-  color: red;
-  align-items: flex-start;
-  justify-content: center;
-  height: 100%;
+#image_backHome {
+  /* id can also have its own class that you can use in javascript, like this */
+  opacity: 1;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-@media screen and (max-width: 768px) {
-  .contactStick {
-    display: none;
-  }
+#image_backHome.hideSticker {
+  opacity: 0;
+  pointer-events: none;
 }
 
-#git_image {
-  height: 25px;
-}
-
-#linked_image {
-  height: 25px;
+#image_backHome:hover {
+  transform: scale(1.2);
 }
 
 #image_backHome {
@@ -93,10 +86,6 @@ html {
   #image_backHome {
     height: 40px;
   }
-}
-
-#image_backHome:hover {
-  transform: scale(1.2);
 }
 
 .wordMix {
