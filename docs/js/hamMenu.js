@@ -7,6 +7,7 @@ const aTagClick = document.querySelectorAll(".off-screen-menu a"); // querySelec
 // (returns a NodeList, similar to array-like list of element)
 // aTagClick is not a single element, It’s a NodeList, so to need another loop later to work with each individual elements
 
+
 hamburgerMenu.addEventListener("click", () => {
     hamburgerMenu.classList.toggle("initiate");
     offScreenMenu.classList.toggle("initiate");

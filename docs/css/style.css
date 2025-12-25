@@ -2,12 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
-/*
-.mobile_navbar {
+.mobile_navbar,
+.off-screen-menu {
   display: none;
 }
-
-*/
 
 @media screen and (max-width: 768px) {
   .off-screen-menu {
