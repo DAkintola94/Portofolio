@@ -2,9 +2,11 @@ html {
   scroll-behavior: smooth;
 }
 
-.mobile_navbar,
-.off-screen-menu {
-  display: none;
+@media screen and (min-width: 768px) {
+  .mobile_navbar,
+  .off-screen-menu {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -22,7 +24,7 @@ html {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     transition: 0.3s ease;
     z-index: 2000; /* z-index literally controls depth, what's comes in front and what's behind.*/
   }
@@ -45,10 +47,12 @@ html {
   }
 
   nav {
-    padding: 1rem;
-    display: flex;
-    background-color: rgba(20, 21, 28, 1);
-    z-index: 2000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 2200;
   }
 
   .mobile_navbar {
@@ -57,6 +61,9 @@ html {
     width: 40px;
     margin-left: auto;
     position: relative;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
   }
 
   .mobile_navbar span {
@@ -87,6 +94,16 @@ html {
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
   }
+
+  .mobile_navbar.deactivate {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .mobile_navbar.initiate.deactivate {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
 .navbar {
@@ -110,6 +127,9 @@ html {
   opacity: 1;
   transform: translateY(0);
   transition: opacity 0.3s ease, transform 0.3s ease;
+}
+#cloudId {
+  display: none;
 }
 
 .navbar.hidden {

@@ -7,6 +7,8 @@ const aTagClick = document.querySelectorAll(".off-screen-menu a"); // querySelec
 // (returns a NodeList, similar to array-like list of element)
 // aTagClick is not a single element, It’s a NodeList, so to need another loop later to work with each individual elements
 
+let timeoutId = null;
+let scrolling = false;
 
 hamburgerMenu.addEventListener("click", () => {
     hamburgerMenu.classList.toggle("initiate");
@@ -19,6 +21,27 @@ aTagClick.forEach(link => { //Another loop again since event listeners are attac
         offScreenMenu.classList.remove("initiate");
     });
 });
+
+window.addEventListener("scroll", () => {
+    if(hamburgerMenu.classList.contains('initiate'))
+        return;
+    
+    if(timeoutId){
+        clearTimeout(timeoutId); 
+    }
+
+    if(!scrolling){
+        scrolling = true;
+        hamburgerMenu.classList.add("deactivate");
+    }
+
+   timeoutId = setTimeout(() => {
+    scrolling = false;
+    hamburgerMenu.classList.remove("deactivate");
+   }, 750 );
+   
+});
+
 
 window.addEventListener("click", function(e){
     if(!hamburgerMenu.contains(e.target) && (!offScreenMenu.contains(e.target))){
