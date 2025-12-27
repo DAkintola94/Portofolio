@@ -3,8 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll(".nav-item");
     const navbarId = document.getElementById("navbarId");
     const stickyImage = document.getElementById("image_backHome");
-    const gitStick = document.getElementById("git_image");
-    const linkedListStick = document.getElementById("linked_image");
+
 
 
     const observer = new IntersectionObserver((entries) => {
@@ -31,13 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 } else {
                     stickyImage.classList.remove("hideSticker");
                 }
-
-                const hideContact = entry.target.id === "sOne" || entry.target.id === "sTwo"; //instead of if statement
-                gitStick.style.transition = "opacity 3s ease-in-out";
-                gitStick.style.opacity = "1";
-                gitStick.hidden = hideContact;
-                linkedListStick.hidden = hideContact;
-                console.log(hideContact ? "Contact stick hidden" : "Contact stick show"); 
             }
             
         });

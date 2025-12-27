@@ -6,8 +6,13 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/sectionStyle.css"> 
     <link rel="stylesheet" href="css/project.css" >
+    <link rel="stylesheet" href="css/timeline.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
     <script src="js/site.js"></script>
     <script src="js/wordMix.js"></script>
+    <script src="js/hamMenu.js"></script>
+    <script src="js/weatherAPI.js"></script>
+    <script src="js/timeline.js"></script>
     <link rel="icon" href="image/augmented_reality_computer.svg" type="image/svg+xml">
     <title>DAkintola94</title>
 </head>
@@ -18,7 +23,28 @@
         <div class="barFour"> <a class="nav-item" href="#sThree"> Experience </a> </div>
         <div class="barThree"> <a class="nav-item" href="#sFour"> Education </a> </div>
         <div class="barThree"> <a class="nav-item" href="#sFive"> Projects </a> </div>
+        <div class="barThree"> <img style="height: 30px;" src="image/cyclone_weather_world_time_icon_194253.svg" alt="weather report" > Weather</div>
+        <div class="barThree" id="locationTester"> <a class="nav-item" href="#sFive"> location </a> </div>
     </div>
+
+    <div class="off-screen-menu" id="off-screen-id">
+        <ul>
+            <li> <a href="#sOne"> <i style="font-size: 30px;" class="fa-solid fa-circle-info"></i></i> About </a> </li>
+            <li> <a href="#sTwo"> <i style="font-size: 30px;" class="fa-solid fa-address-book"></i>  Contact </a> </li>
+            <li> <a href="#sThree"> <i style="font-size: 30px;" class="fa-solid fa-gears"></i> Experience </a> </li>
+            <li> <a href="#sFour"> <i style="font-size: 30px;" class="fa-solid fa-user-graduate"></i> Education </a> </li>
+            <li> <a href="#sFive"> <i style="font-size: 30px;" class="fa-solid fa-laptop-code"></i> Projects </a> </li>
+        </ul>
+    </div>
+    <nav>
+        <div class="mobile_navbar">
+            <span> </span>
+            <span> </span>
+            <span> </span> 
+            <span> </span>
+            <span> </span> 
+        </div>
+    </nav>
 
     <section class="sectionOne" id="sOne" > 
         <video autoplay muted loop id="sectionOneVideo" > 
@@ -41,38 +67,77 @@
             <div class="wordMix" id="h2Line">
                 <h1> Collaborative </h1>
             </div>
-                
-            <h3 id="h2Line">I’m Dennis Akintola, an IT student at the University of Agder. Throughout my studies,
-                 I’ve developed a diverse skill set that includes technical expertise, 
-                problem-solving abilities, and strong interpersonal skills gained through teamwork and real-world projects.</h3>
+                <br><br>
+            <h3 id="h2Line" style="color: orange">Third-year Information Technology student at the University of Agder.
+
+            </h3>
             <img id="semi_logo" alt="" src="image/debug.png" />
+            <i id="cloudId" class="fa fa-cloud"></i> 
         </div>
         
     </section>
-    <section class="sectionTwo" id="sTwo" >
-        <div class="contactDetail">
-            <h1> Contact information </h1>
-        <div class="SoME_logo" id="SoME_id">  
-            <a title="Email" href="mailto:degameros@gmail.com"> 
-                <img alt="" src="image/email_logo.svg" /> 
-            </a>
-            <a title="Github" href="https://github.com/DAkintola94"> <img alt="" src="image/github_logo.svg" /> </a> 
-            <a title="Linkedin" href="https://www.linkedin.com/in/dennis-oni-akintola/"> <img alt="" src="image/linkedin_logo.svg" /> </a>
-            <a title="Facebook" href="https://www.facebook.com/dennis.akintola/"> <img alt="" src="image/facebook_logo.svg" /> </a>
-         </div>
-         <p> +4740748608</p>
 
-        </div>
-        <div class="contact_image" >
-             <h2 id="career_highlight"> Career Highlights </h2> 
-            <div class="experience_image" id="experience_logo">
-            <img alt="kommunen" src="image/kommunen_logo.svg"/>
-            <img alt="" src="image/uia-logo.svg" />
-            <img alt="" src="image/Adecco_Logo.svg" />
-            <img alt="" src="image/peppes-pizza-seeklogo.png"/>
+      <section class="timeline" id="sFive">
+         <h1> Experience </h1>
+    <ul>
+        <li>
+            <div>
+                <img src="image/kommunen_logo.svg" alt="" >
+                <h3> Kristiansand kommune</h3>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Blanditiis debitis optio facilis consequuntur libero non sunt corrupti, 
+                    voluptatibus nihil. Vitae iste tempora nesciunt hic delectus cupiditate 
+                    nostrum enim pariatur praesentium.
+                </p>
             </div>
-        </div>
-    </section>
+        </li>
+        <li>
+            <div>
+                <img src="image/uia-logo.svg" alt="" >
+                <h3> Kristiansand kommune</h3>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Blanditiis debitis optio facilis consequuntur libero non sunt corrupti, 
+                    voluptatibus nihil. Vitae iste tempora nesciunt hic delectus cupiditate 
+                    nostrum enim pariatur praesentium.
+                </p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <img src="image/uia-logo.svg" alt="" >
+                <h3> Kristiansand kommune</h3>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Blanditiis debitis optio facilis consequuntur libero non sunt corrupti, 
+                    voluptatibus nihil. Vitae iste tempora nesciunt hic delectus cupiditate 
+                    nostrum enim pariatur praesentium.
+                </p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <img src="image/Start_Kristiansand_Logo.svg" alt="" >
+                <h3> Kristiansand kommune</h3>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Blanditiis debitis optio facilis consequuntur libero non sunt corrupti, 
+                    voluptatibus nihil. Vitae iste tempora nesciunt hic delectus cupiditate 
+                    nostrum enim pariatur praesentium.
+                </p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <img src="image/kommunen_logo.svg" alt="" >
+                <h3> Kristiansand kommune</h3>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Blanditiis debitis optio facilis consequuntur libero non sunt corrupti, 
+                    voluptatibus nihil. Vitae iste tempora nesciunt hic delectus cupiditate 
+                    nostrum enim pariatur praesentium.
+                </p>
+            </div>
+        </li>
+    </ul>
+     </section>
+
 
     <section class="sectionThree" id="sThree"> 
         <div class="subtitle"> Projects
@@ -122,10 +187,34 @@
             <img alt= "" src="image/tailwind-svgrepo-com.svg" >
             <img alt= "" src="image/sql-database-generic-svgrepo-com.svg" >
     </div>
-     <div class="footer_section">
-        © 2026 Dennis Akintola. All rights reserved. Built with HTML, CSS and Javascript.
-     </div>
      </section>
+
+        <section class="sectionTwo" id="sTwo" >
+        <div class="contactDetail">
+            <h1> Contact information </h1>
+        <div class="SoME_logo" id="SoME_id">  
+            <a title="Email" href="mailto:degameros@gmail.com"> 
+                <img alt="" src="image/email_logo.svg" /> 
+            </a>
+            <a title="Github" href="https://github.com/DAkintola94"> <img alt="" src="image/github_logo.svg" /> </a> 
+            <a title="Linkedin" href="https://www.linkedin.com/in/dennis-oni-akintola/"> <img alt="" src="image/linkedin_logo.svg" /> </a>
+            <a title="Facebook" href="https://www.facebook.com/dennis.akintola/"> <img alt="" src="image/facebook_logo.svg" /> </a>
+         </div>
+         <p> +4740748608</p>
+        </div>
+
+        <div class="contact_image" >
+             <h2 id="career_highlight"> Career Highlights </h2> 
+            <div class="experience_image" id="experience_logo">
+            <img alt="kommunen" src="image/kommunen_logo.svg"/>
+            <img alt="" src="image/uia-logo.svg" />
+            <img alt="" src="image/Adecco_Logo.svg" />
+            <img alt="" src="image/peppes-pizza-seeklogo.png"/>
+            <img alt="" src="image/Start_Kristiansand_Logo.svg"/>
+            </div>
+        </div>
+         <div style="justify-content: center; align-items: center; display: flex;"> © 2026 Dennis Akintola. All rights reserved. Built with HTML, CSS and Javascript. </div>
+    </section>
 
     <div class="stickFoot">
     <a title="Hjem" onmouseover="this.title=''" href="#sOne" id="a_backHome">
