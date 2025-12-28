@@ -1,5 +1,18 @@
 html {
   scroll-behavior: smooth;
+  caret-color: transparent; /*Removes the annoying blinking marker*/
+}
+
+body {
+  font: normal 20px/1.5 "Halvetica Neue";
+  background-color: #151414ff;
+  color: #fff;
+  overflow-x: hidden;
+  padding-bottom: 5px;
+  background-image: url("../image/landscape.jpg");
+  background-size: cover; /* This is the key property */
+  background-position: center; /* Centers the image in the container */
+  background-repeat: no-repeat;
 }
 
 @media screen and (min-width: 768px) {
@@ -278,11 +291,11 @@ html {
 .skills_div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  align-items: center;
-  justify-content: center;
   gap: 10px;
-  padding-bottom: 100px;
-  padding-left: 0.75rem;
+  padding: 100px 0.75rem;
+  max-width: 1300px;
+  place-items: center;
+  margin: 0 auto;
 }
 
 .skills_div img {
