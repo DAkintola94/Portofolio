@@ -6,6 +6,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+    var typed = new Typed(".input", {
+        strings: ["Information Technology student",
+            "Enthusiastic",
+            "Creative",
+            "Collaborative"
+        ],
+        typedSpeed: 70,
+        backSpeed: 55,
+        loop: true
+    })
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry =>  {
             if(entry.isIntersecting){
