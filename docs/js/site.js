@@ -26,9 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 const idValue = entry.target.id;
                 const activeLink = document.querySelector(`.nav-item[href="#${idValue}"]`);
                 
-                if(activeLink){
-                    activeLink.classList.add("active");
-                }
+                //if(activeLink){
+                    //activeLink.classList.add("active");
+                //}
 
                 if(entry.target.id !== "sOne"){
                     navbarId.classList.add("hidden");
