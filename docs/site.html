@@ -8,32 +8,31 @@
     <link rel="stylesheet" href="css/project.css" >
     <link rel="stylesheet" href="css/timeline.css" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
     <script src="js/site.js"></script>
-    <script src="js/wordMix.js"></script>
     <script src="js/hamMenu.js"></script>
     <script src="js/weatherAPI.js"></script>
     <script src="js/timeline.js"></script>
     <link rel="icon" href="image/augmented_reality_computer.svg" type="image/svg+xml">
     <title>DAkintola94</title>
 </head>
-<body style="background-color: #151414ff;">
+<body>
     <div class="navbar" id="navbarId"> 
-        <div class="barTwo"> <a class="nav-item active" href="#sOne"> About </a> </div>
-        <div class="barFive"> <a class="nav-item" href="#sTwo"> Contact </a></div>
-        <div class="barFour"> <a class="nav-item" href="#sThree"> Experience </a> </div>
-        <div class="barThree"> <a class="nav-item" href="#sFour"> Education </a> </div>
-        <div class="barThree"> <a class="nav-item" href="#sFive"> Projects </a> </div>
-        <div class="barThree"> <img style="height: 30px;" src="image/cyclone_weather_world_time_icon_194253.svg" alt="weather report" > Weather</div>
-        <div class="barThree" id="locationTester"> <a class="nav-item" href="#sFive"> location </a> </div>
+        <div class="barOne">
+            <i class="fa-solid fa-d"></i>
+             <a class="nav-item" href="#sOne"> </a> 
+        </div>
+        <div class="barThree"> <a class="nav-item" href="#sFive"> Experience </a> </div>
+        <div class="barFour"> <a class="nav-item" href="#sFour"> Skills </a> </div>
+        <div class="barFive"> <a class="nav-item" href="#sFour"> Projects </a> </div>
     </div>
 
     <div class="off-screen-menu" id="off-screen-id">
         <ul>
             <li> <a href="#sOne"> <i style="font-size: 30px;" class="fa-solid fa-circle-info"></i></i> About </a> </li>
-            <li> <a href="#sTwo"> <i style="font-size: 30px;" class="fa-solid fa-address-book"></i>  Contact </a> </li>
-            <li> <a href="#sThree"> <i style="font-size: 30px;" class="fa-solid fa-gears"></i> Experience </a> </li>
-            <li> <a href="#sFour"> <i style="font-size: 30px;" class="fa-solid fa-user-graduate"></i> Education </a> </li>
-            <li> <a href="#sFive"> <i style="font-size: 30px;" class="fa-solid fa-laptop-code"></i> Projects </a> </li>
+            <li> <a href="#sFour"> <i style="font-size: 30px;" class="fa-solid fa-gears"></i> Skills </a> </li>
+            <li> <a href="#sFive"> <i style="font-size: 30px;" class="fa-solid fa-user-graduate"></i> Experience </a> </li>
+            <li> <a href="#sFour"> <i style="font-size: 30px;" class="fa-solid fa-laptop-code"></i> Projects </a> </li>
         </ul>
     </div>
     <nav>
@@ -50,31 +49,31 @@
         <video autoplay muted loop id="sectionOneVideo" > 
             <source src="image/green_loop_vid.mp4" type="video/mp4" />
         </video>
-        <div class="aboutDetail">
-            <img alt="Avatar_pic" src="image/picture_profile.png" />
-            <div class="wordMix" id="h2Line">
-                <h1> Enthusiastic</h1>
+        <div class="firstSection-container">
+            <div class="hero-pic">
+                <img  src="image/picture_profile.png" alt="profile_pic">
             </div>
+            <div class="hero-text">
+                <h5> Hi I'm <span class="input"> Information Technology student</span> </h5>
+                <h1> Dennis Akintola  <img id="semi_logo" alt="" src="image/debug.png" /> </h1>
+                <p>I am currently in my third year of the Information Systems program at the University of Agder. 
+                    Throughout my studies, I have developed solid technical skills in frontend and backend development, system design, and modeling, 
+                    along with other relevant areas of software development.
+                </p>
+                <div class="btn-group">
+                    <a href="#sFour" class="btn active">Skills</a>
+                    <a href="mailto:degameros@gmail.com" class="btn active"> Contact</a>
+                    +47 40748608
+                </div>
 
-            <div class="wordMix" id="h2Line">
-                <h1> Creative </h1>
+                <div class="social">
+                    <a href="https://github.com/DAkintola94"> <i class="fa-brands fa-facebook"></i> </a>
+                    <a href="https://www.linkedin.com/in/dennis-oni-akintola/"> <i class="fa-brands fa-linkedin"></i> </a>
+                    <a href="https://github.com/DAkintola94"> <i class="fa-brands fa-github"></i> </a>
+                </div>
+
             </div>
-
-            <div class="wordMix" id="h2Line">
-                <h1> Analytical </h1>
-            </div>
-
-            <div class="wordMix" id="h2Line">
-                <h1> Collaborative </h1>
-            </div>
-                <br><br>
-            <h3 id="h2Line" style="color: orange">Third-year Information Technology student at the University of Agder.
-
-            </h3>
-            <img id="semi_logo" alt="" src="image/debug.png" />
-            <i id="cloudId" class="fa fa-cloud"></i> 
         </div>
-        
     </section>
 
       <section class="timeline" id="sFive">
@@ -135,6 +134,8 @@
                 </p>
             </div>
         </li>
+
+
     </ul>
      </section>
 
@@ -153,25 +154,26 @@
          </div>
             <div class="project_div">
                 <div class="proj_card">
-                    <h2> Hei</h2>
+                    <h2> Projects</h2>
                 </div>
                 <div class="proj_card">
-                    <h2> Experience</h2>
+                    <h2> Video </h2>
                 </div>
                 <div class="proj_card">
-                    <h2> Experience</h2>
+                    <h2> Coming </h2>
                 </div>
                 <div class="proj_card">
-                    <h2> Experience</h2>
+                    <h2> Soon </h2>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="sectionFour" id="sFour">
-        <div class="subtitle"> Technical skills
-        <div class="under_line"></div>    
+        <div class="subtitle"> Technologies and Tools
+        <div class="under_line"></div>   
         </div>
+        <div style="display: flex; justify-content: center;"> Skills I have mastered yet  </div>
     <div class="skills_div"> 
         
             <img alt= "" src="image/docker_original_wordmark_logo_icon_146557.svg" >
@@ -188,33 +190,6 @@
             <img alt= "" src="image/sql-database-generic-svgrepo-com.svg" >
     </div>
      </section>
-
-        <section class="sectionTwo" id="sTwo" >
-        <div class="contactDetail">
-            <h1> Contact information </h1>
-        <div class="SoME_logo" id="SoME_id">  
-            <a title="Email" href="mailto:degameros@gmail.com"> 
-                <img alt="" src="image/email_logo.svg" /> 
-            </a>
-            <a title="Github" href="https://github.com/DAkintola94"> <img alt="" src="image/github_logo.svg" /> </a> 
-            <a title="Linkedin" href="https://www.linkedin.com/in/dennis-oni-akintola/"> <img alt="" src="image/linkedin_logo.svg" /> </a>
-            <a title="Facebook" href="https://www.facebook.com/dennis.akintola/"> <img alt="" src="image/facebook_logo.svg" /> </a>
-         </div>
-         <p> +4740748608</p>
-        </div>
-
-        <div class="contact_image" >
-             <h2 id="career_highlight"> Career Highlights </h2> 
-            <div class="experience_image" id="experience_logo">
-            <img alt="kommunen" src="image/kommunen_logo.svg"/>
-            <img alt="" src="image/uia-logo.svg" />
-            <img alt="" src="image/Adecco_Logo.svg" />
-            <img alt="" src="image/peppes-pizza-seeklogo.png"/>
-            <img alt="" src="image/Start_Kristiansand_Logo.svg"/>
-            </div>
-        </div>
-         <div style="justify-content: center; align-items: center; display: flex;"> © 2026 Dennis Akintola. All rights reserved. Built with HTML, CSS and Javascript. </div>
-    </section>
 
     <div class="stickFoot">
     <a title="Hjem" onmouseover="this.title=''" href="#sOne" id="a_backHome">

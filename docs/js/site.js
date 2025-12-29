@@ -6,6 +6,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+    var typed = new Typed(".input", {
+        strings: ["Information Technology student",
+            "Enthusiastic",
+            "Creative",
+            "Collaborative"
+        ],
+        typedSpeed: 70,
+        backSpeed: 55,
+        loop: true
+    })
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry =>  {
             if(entry.isIntersecting){
@@ -15,9 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 const idValue = entry.target.id;
                 const activeLink = document.querySelector(`.nav-item[href="#${idValue}"]`);
                 
-                if(activeLink){
-                    activeLink.classList.add("active");
-                }
+                //if(activeLink){
+                    //activeLink.classList.add("active");
+                //}
 
                 if(entry.target.id !== "sOne"){
                     navbarId.classList.add("hidden");

@@ -22,7 +22,7 @@ aTagClick.forEach(link => { //Another loop again since event listeners are attac
     });
 });
 
-window.addEventListener("scroll", () => {
+window.addEventListener("scroll", () => { //The scroll event listener runs every time you scroll
     if(hamburgerMenu.classList.contains('initiate'))
         return;
     
@@ -30,7 +30,7 @@ window.addEventListener("scroll", () => {
         clearTimeout(timeoutId); 
     }
 
-    if(!scrolling){
+    if(!scrolling){ // check first if scrolling variable is false, when we start scrolling, we set it to true
         scrolling = true;
         hamburgerMenu.classList.add("deactivate");
     }
