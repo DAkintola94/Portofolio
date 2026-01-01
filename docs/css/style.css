@@ -115,15 +115,6 @@ body {
     transform: translate(-50%, -50%) rotate(-45deg);
   }
 
-  .mobile_navbar.deactivate {
-    opacity: 0.5;
-  }
-
-  .mobile_navbar.initiate.deactivate {
-    opacity: 1;
-    pointer-events: auto;
-  }
-
   .firstSection-container {
     flex-direction: column;
     padding-top: 2rem;
