@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+if(window.matchMedia('screen and (max-width: 768px)').matches)
+{
+console.log("Welcome to mobile section");
 const hamburgerMenu = document.querySelector(".mobile_navbar"); //querySelector returns the first element, therefor you dont need loop to work with single items
 
 const offScreenMenu = document.querySelector(".off-screen-menu"); //querySelector returns the first element, therefor you dont need loop to work with single items
@@ -49,5 +53,9 @@ window.addEventListener("click", function(e){
     offScreenMenu.classList.remove("initiate");
     }
 });
+
+
+
+}
 
 });
