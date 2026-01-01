@@ -49,6 +49,7 @@ window.addEventListener("scroll", () => { //The scroll event listener runs every
 
 window.addEventListener("click", function(e){
     if(!hamburgerMenu.contains(e.target) && (!offScreenMenu.contains(e.target))){
+        e.stopPropagation();
     hamburgerMenu.classList.remove("initiate");
     offScreenMenu.classList.remove("initiate");
     }
